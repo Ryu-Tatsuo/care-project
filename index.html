@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Épure Botanique — Atelier de Soins · Botanical Hair & Skincare Rituals</title>
+  <meta name="description" content="Épure Botanique crafts clean, high-performance botanical hair and skin care ritual essentials. Cold-pressed active botanicals, plant ceramides, clean, and cruelty-free." />
+
+  <link rel="canonical" href="__SITE_URL__/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1f241e" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Épure Botanique" />
+  <meta property="og:title" content="Épure Botanique — Atelier de Soins" />
+  <meta property="og:description" content="Botanical hair and skincare rituals crafted slowly in Provence. Pure, restorative, and deeply nourishing." />
+  <meta property="og:url" content="__SITE_URL__/" />
+  <meta property="og:image" content="__SITE_URL__/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f241e'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23b08642' text-anchor='middle'%3EÉ%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="css/tokens.css?v=1" />
+  <link rel="stylesheet" href="css/base.css?v=1" />
+  <link rel="stylesheet" href="css/components.css?v=2" />
+  <link rel="stylesheet" href="css/sections.css?v=1" />
+
+  <!--__STRUCTURED_DATA__-->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared SVG Artwork (Care & Botanical Dropper Bottles) -->
+  <svg class="visually-hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="grad-gold" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#d9b578" />
+        <stop offset="1" stop-color="#96703a" />
+      </linearGradient>
+      <linearGradient id="grad-glass" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="rgba(255,255,255,.9)" />
+        <stop offset="1" stop-color="rgba(235,242,233,.4)" />
+      </linearGradient>
+      <linearGradient id="grad-pipette" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2c332b" />
+        <stop offset="1" stop-color="#181c17" />
+      </linearGradient>
+      <!-- Botanical Care Dropper Bottle Symbol -->
+      <symbol id="flacon-care" viewBox="0 0 200 300">
+        <!-- Rubber Bulb Pipette -->
+        <path d="M85 8 C 85 2, 115 2, 115 8 L 115 26 L 85 26 Z" fill="url(#grad-pipette)" />
+        <!-- Pipette Collar / Ring -->
+        <rect x="80" y="26" width="40" height="12" rx="3" fill="url(#grad-gold)" />
+        <!-- Bottle Neck -->
+        <rect x="88" y="38" width="24" height="20" fill="url(#grad-glass)" stroke="rgba(31,36,30,.2)" />
+        <!-- Bottle Glass Body -->
+        <rect x="46" y="58" width="108" height="234" rx="22" fill="url(#grad-glass)" stroke="rgba(31,36,30,.15)" />
+        <!-- Serum / Oil Liquid -->
+        <rect x="54" y="112" width="92" height="172" rx="16" fill="var(--liquid, #967a38)" />
+        <!-- Internal Dropper Tube -->
+        <rect x="97" y="44" width="6" height="236" rx="3" fill="rgba(255,255,255,.55)" />
+        <!-- Glass Sheen Highlights -->
+        <rect x="58" y="70" width="10" height="210" rx="5" fill="rgba(255,255,255,.5)" />
+        <rect x="54" y="112" width="92" height="5" rx="2" fill="rgba(255,255,255,.4)" />
+        <!-- Organic Minimalist Label -->
+        <rect x="68" y="160" width="64" height="84" rx="4" fill="#faf7f2" stroke="rgba(31,36,30,.14)" />
+        <text x="100" y="184" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="10" letter-spacing="2" fill="#1f241e">ÉPURE</text>
+        <line x1="82" y1="194" x2="118" y2="194" stroke="#b08642" stroke-width="1" />
+        <text x="100" y="210" text-anchor="middle" font-family="Manrope, sans-serif" font-size="6" letter-spacing="1.2" fill="rgba(31,36,30,.7)">BOTANIQUE</text>
+        <text x="100" y="224" text-anchor="middle" font-family="Manrope, sans-serif" font-size="5.5" letter-spacing="1" fill="rgba(31,36,30,.5)">SOIN PUR</text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ===================== Header ===================== -->
+  <header class="site-header" data-header>
+    <p class="announcement"><span data-i18n="announcement.copy">Complimentary botanical travel oil on orders over €70 — </span><strong data-i18n="announcement.link">discover the hair &amp; skin ritual</strong></p>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Épure Botanique — home">
+        Épure Botanique <span class="brand-sub">Provence</span>
+      </a>
+
+      <nav class="nav-links" id="primary-nav" data-nav-links aria-label="Primary">
+        <a href="#collection" data-i18n="nav.collection">Treatments</a>
+        <a href="#maison" data-i18n="nav.atelier">Atelier</a>
+        <a href="#routine" data-i18n="nav.routine">The Routine</a>
+        <a href="#faq" data-i18n="nav.care">Care &amp; FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <label class="language-switcher">
+          <span class="visually-hidden" data-i18n="language.label">Language</span>
+          <select data-language aria-label="Language">
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="ar">AR</option>
+          </select>
+        </label>
+        <button class="bag-button" type="button" aria-label="Shopping bag, 0 items" aria-expanded="false" aria-controls="cart-drawer">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M5.5 8.5h13l1 12.5H4.5l1-12.5Z" />
+            <path d="M9 8.5V6.25a3 3 0 0 1 6 0V8.5" />
+            <path d="M9 12.5h.01M15 12.5h.01" stroke-width="2.4" stroke-linecap="round" />
+          </svg>
+          <span class="bag-count" data-bag-count aria-hidden="true">0</span>
+        </button>
+
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== Hero ===================== -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Atelier de soins botaniques · Provence — est. 2018</p>
+          <h1 data-i18n="hero.title">Nurture your <em>natural glow</em>.</h1>
+          <p class="lede" data-i18n="hero.lede">High-performance hair and skin botanical care, formulated with cold-pressed restorative oils, bio-fermented botanicals, and plant ceramides. Pure, effective, and deeply replenishing.</p>
+          <div class="hero-cta">
+            <a class="btn btn--primary" href="#collection" data-track="cta_click" data-track-label="explore_treatments" data-i18n="hero.explore">Shop treatments</a>
+            <a class="btn btn--ghost" href="#maison" data-track="cta_click" data-track-label="our_philosophy" data-i18n="hero.story">Our philosophy</a>
+          </div>
+          <ul class="hero-trust">
+            <li><span class="stars" aria-hidden="true">★★★★★</span> 4.9 — 3,800+ reviews</li>
+            <li data-i18n="hero.shipping">Free worldwide delivery from €70</li>
+            <li data-i18n="hero.returns">30-day gentle guarantee</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="arch" style="background: radial-gradient(120% 90% at 50% 10%, #e7eee5, #ded6c5);">
+            <svg class="bottle" style="--liquid:#967a38" aria-hidden="true"><use href="#flacon-care" /></svg>
+          </div>
+          <span class="float-chip float-chip--1">Rosemary Leaf</span>
+          <span class="float-chip float-chip--2">Plant Ceramides</span>
+          <span class="float-chip float-chip--3">Squalane</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Marquee ===================== -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span data-i18n="marquee.botanical">100% Cold-Pressed Botanicals</span>
+        <span data-i18n="marquee.clean">Sulfate &amp; Silicone Free</span>
+        <span data-i18n="marquee.cruelty">Leaping Bunny Certified</span>
+        <span data-i18n="marquee.refillable">Recyclable Glass &amp; Refills</span>
+        <span data-i18n="marquee.dermatologist">Dermatologist Tested</span>
+        <span data-i18n="marquee.botanical">100% Cold-Pressed Botanicals</span>
+        <span data-i18n="marquee.clean">Sulfate &amp; Silicone Free</span>
+        <span data-i18n="marquee.cruelty">Leaping Bunny Certified</span>
+        <span data-i18n="marquee.refillable">Recyclable Glass &amp; Refills</span>
+        <span data-i18n="marquee.dermatologist">Dermatologist Tested</span>
+      </div>
+      <button class="marquee-toggle" type="button" data-marquee-toggle aria-pressed="false" aria-label="Pause moving brand statements">Pause</button>
+    </div>
+
+    <!-- ===================== Collection ===================== -->
+    <section class="section collection" id="collection">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow" data-i18n="collection.eyebrow">The Formulations</p>
+          <h2 data-i18n="collection.title">Essential hair &amp; skincare treatments.</h2>
+          <p data-i18n="collection.copy">Every formula is clean, balanced to scalp and skin physiological pH, and packed with nutrient-dense botanical actives.</p>
+        </div>
+
+        <!-- Category filter -->
+        <div class="filter-bar" data-reveal>
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true" data-i18n="filter.all">All Care</button>
+          <button class="filter-btn" type="button" data-filter="hair" aria-pressed="false" data-i18n="filter.hair">Hair Care</button>
+          <button class="filter-btn" type="button" data-filter="skin" aria-pressed="false" data-i18n="filter.skin">Skin Care</button>
+          <button class="filter-btn" type="button" data-filter="body" aria-pressed="false" data-i18n="filter.body">Body Care</button>
+        </div>
+        <div class="collection-tools" data-reveal>
+          <label class="search-field"><span class="visually-hidden">Search treatments</span><input type="search" data-product-search placeholder="Search treatments" aria-label="Search treatments"></label>
+          <label class="sort-field"><span class="visually-hidden">Filter by concern</span><select data-concern-filter aria-label="Filter by concern"><option value="all">All concerns</option><option value="dryness">Dryness</option><option value="sensitivity">Sensitivity</option><option value="dullness">Dullness</option><option value="breakage">Breakage</option></select></label>
+          <label class="sort-field"><span class="visually-hidden">Sort treatments</span><select data-product-sort aria-label="Sort treatments"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option></select></label>
+        </div>
+        <p class="result-summary" data-result-summary aria-live="polite"></p>
+        <div class="empty-state" data-empty-state hidden><h3>No treatments found</h3><p>Try another concern, search term or filter.</p><button class="btn btn--ghost" type="button" data-clear-products>Reset discovery</button></div>
+
+        <div class="collection-grid">
+          <!--__PRODUCTS__-->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Maison / Atelier ===================== -->
+    <section class="section maison" id="maison">
+      <div class="container maison-grid">
+        <div class="maison-visual" data-reveal>
+          <div class="grain" aria-hidden="true"></div>
+          <svg class="botanical" viewBox="0 0 220 240" fill="none" aria-hidden="true">
+            <g stroke="#385438" stroke-width="1.3" stroke-linecap="round">
+              <path d="M110 235 C 108 180 112 130 110 50" />
+              <path d="M110 205 C 78 195 62 178 54 152" />
+              <path d="M110 160 C 142 150 158 134 164 108" />
+              <path d="M110 110 C 80 102 64 86 58 62" />
+              <path d="M110 70 C 136 62 150 48 156 30" />
+            </g>
+            <g fill="#385438" opacity=".5">
+              <path d="M54 152 c -14 -6 -18 -18 -12 -29 c 12 -4 24 4 27 17 c -4 6 -9 10 -15 12 z" />
+              <path d="M164 108 c 14 -6 18 -18 12 -29 c -12 -4 -24 4 -27 17 c 4 6 9 10 15 12 z" />
+              <path d="M58 62 c -13 -5 -17 -16 -11 -26 c 11 -4 22 4 25 15 c -4 5 -9 9 -14 11 z" />
+              <path d="M156 30 c 12 -5 16 -15 11 -24 c -10 -4 -20 3 -23 14 c 3 5 7 8 12 10 z" />
+              <path d="M110 50 c -6 -8 -6 -18 0 -26 c 7 7 7 19 0 26 z" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="maison-copy" data-reveal>
+          <p class="eyebrow" data-i18n="atelier.eyebrow">The Atelier</p>
+          <h2 data-i18n="atelier.title">Crafted with reverence for nature.</h2>
+          <p data-i18n="atelier.copy1">Founded in Provence in 2018, Épure Botanique bridges age-old botanical wisdom with modern dermal and trichological science. We believe true hair and skin health starts with gentle, restorative plant nutrients.</p>
+          <p data-i18n="atelier.copy2">Every treatment is freshly blended in small batches, avoiding silicones, heavy mineral waxes, synthetic fragrances, and aggressive detergents. Only bio-compatible active botanicals.</p>
+          <p class="signature" data-i18n="atelier.signature">— Camille &amp; Julien Vaneau, founders</p>
+
+          <div class="stats">
+            <div class="stat"><div class="num">2018</div><div class="lbl" data-i18n="stats.founded">Founded in Provence</div></div>
+            <div class="stat"><div class="num">100%</div><div class="lbl" data-i18n="stats.actives">Active botanicals</div></div>
+            <div class="stat"><div class="num">99.4%</div><div class="lbl" data-i18n="stats.natural">Plant-origin ingredients</div></div>
+            <div class="stat"><div class="num">98%</div><div class="lbl" data-i18n="stats.satisfaction">Ritual satisfaction</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Daily Routine / Ritual ===================== -->
+    <section class="section ritual" id="routine">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow" data-i18n="routine.eyebrow">The Daily Ritual</p>
+          <h2 data-i18n="routine.title">How to care for scalp, hair &amp; skin.</h2>
+          <p data-i18n="routine.copy">Simple mindful steps create resilient shine, balanced moisture, and a fortified skin barrier.</p>
+        </div>
+
+        <div class="ritual-grid">
+          <div class="step" data-reveal>
+            <div class="step-num">01</div>
+            <h3 data-i18n="routine.step1Title">Purify &amp; Tone</h3>
+            <p data-i18n="routine.step1Copy">Cleanse skin and scalp with gentle plant-derived micellar bases to respect the natural barrier.</p>
+          </div>
+          <div class="step" data-reveal>
+            <div class="step-num">02</div>
+            <h3 data-i18n="routine.step2Title">Infuse Botanical Hydration</h3>
+            <p data-i18n="routine.step2Copy">Mist floral hydrosols or apply bio-fermented hyaluronic acid while the epidermis is receptive.</p>
+          </div>
+          <div class="step" data-reveal>
+            <div class="step-num">03</div>
+            <h3 data-i18n="routine.step3Title">Target &amp; Restore</h3>
+            <p data-i18n="routine.step3Copy">Apply rich ceramide creams or hair bond repairing masks to nourish deep cellular layers.</p>
+          </div>
+          <div class="step" data-reveal>
+            <div class="step-num">04</div>
+            <h3 data-i18n="routine.step4Title">Seal with Elixir</h3>
+            <p data-i18n="routine.step4Copy">Lock in hydration with 2–3 drops of golden cold-pressed oil on face, hair lengths, and scalp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Reviews ===================== -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <p class="eyebrow" data-i18n="reviews.eyebrow">Client Testimonials</p>
+          <h2 data-i18n="reviews.title">Loved for transformational results.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <figure class="testimonial" data-reveal>
+            <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <blockquote data-i18n="reviews.quote1">“The Élixir Botanique completely transformed my dry hair ends and soothed my sensitive scalp in two weeks. A true staple!”</blockquote>
+            <figcaption><cite><strong>Claire M.</strong> — Paris</cite></figcaption>
+          </figure>
+          <figure class="testimonial" data-reveal>
+            <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <blockquote data-i18n="reviews.quote2">“Crème Céleste gave my skin that dewy, rested finish without feeling greasy. The texture is pure poetry.”</blockquote>
+            <figcaption><cite><strong>Sarah B.</strong> — Bordeaux</cite></figcaption>
+          </figure>
+          <figure class="testimonial" data-reveal>
+            <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <blockquote data-i18n="reviews.quote3">“Finally a clean hair and skin brand that smells incredible naturally and works better than luxury department store brands.”</blockquote>
+            <figcaption><cite><strong>Amira K.</strong> — Casablanca</cite></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section faq" id="faq">
+      <div class="container faq-wrap">
+        <div class="section-head section-head--center" data-reveal>
+          <p class="eyebrow" data-i18n="faq.eyebrow">Client Care</p>
+          <h2 data-i18n="faq.title">Frequently Asked Questions</h2>
+        </div>
+
+        <div data-reveal>
+          <!--__FAQ__-->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Newsletter Club ===================== -->
+    <section class="section cta">
+      <div class="container cta-inner" data-reveal>
+        <p class="eyebrow" data-i18n="cta.eyebrow">The Botanical Club</p>
+        <h2 data-i18n="cta.title">Join our inner circle.</h2>
+        <p data-i18n="cta.copy">Receive early access to seasonal harvests, tailored hair &amp; skin guides, and 10% off your first order.</p>
+
+        <form data-newsletter novalidate>
+          <div class="field">
+            <label class="visually-hidden" for="email">Email address</label>
+            <input id="email" type="email" name="email" placeholder="Your email address" data-i18n-placeholder="cta.email" autocomplete="email" aria-describedby="newsletter-error" required />
+            <button class="btn btn--gold" type="submit" data-i18n="cta.subscribe">Subscribe</button>
+          </div>
+
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Leave this field empty</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span data-i18n="cta.consent">I agree to the <a href="privacy.html">privacy policy</a> and consent to receive emails.</span>
+          </label>
+        </form>
+        <p class="form-error" id="newsletter-error" data-error role="alert"></p>
+        <p class="form-note" data-i18n="cta.note">No spam. Unsubscribe anytime.</p>
+
+        <div class="cta-success" data-success role="status">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+          <p data-success-message>Your subscription confirmation link is ready.</p>
+          <a class="confirmation-link" data-confirm-link href="privacy.html" hidden>Confirm subscription</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Épure Botanique — home">
+            Épure Botanique <span class="brand-sub">Provence</span>
+          </a>
+          <p data-i18n="footer.description">Atelier de soins botaniques crafting clean, restorative treatments for hair and skin. Provence, France.</p>
+          <div class="footer-contact">
+            <a class="location-link" href="https://www.google.com/maps/search/?api=1&query=Provence%2C%20France" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M20 10.2c0 5.1-8 10.8-8 10.8S4 15.3 4 10.2a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              <span data-i18n="footer.location">Aix-en-Provence, France</span>
+            </a>
+            <a class="whatsapp-link" href="https://wa.me/212645905882?text=Hello%20Épure%20Botanique%2C%20I%20would%20like%20to%20consult%20about%20your%20hair%20and%20skin%20care%20products." target="_blank" rel="noopener noreferrer" aria-label="Chat with Épure Botanique on WhatsApp">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5Zm0 17.2a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.7 7.7 0 1 1 12 19.7Zm4.3-5.8c-.2-.1-1.3-.7-1.5-.8-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1a6.2 6.2 0 0 1-1.8-1.1 6.8 6.8 0 0 1-1.2-1.5c-.1-.2 0-.3.1-.5l.4-.5c.1-.1.1-.3.1-.4l-.7-1.7c-.1-.2-.3-.3-.5-.3h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.2 1.6 2.5 3.9 3.5.5.2.9.4 1.2.5.5.2 1 .2 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.3-.2-.5-.3Z" />
+              </svg>
+              <span data-i18n="footer.whatsapp">Order &amp; Consult on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Treatments">
+          <h4 data-i18n="footer.shop">Treatments</h4>
+          <a href="#collection" data-i18n="footer.hair">Hair Care</a>
+          <a href="#collection" data-i18n="footer.skin">Skin Care</a>
+          <a href="#collection" data-i18n="footer.body">Body Care</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Atelier">
+          <h4 data-i18n="footer.atelier">Atelier</h4>
+          <a href="#maison" data-i18n="footer.story">Our Story</a>
+          <a href="#maison" data-i18n="footer.ingredients">Botanical Sourcing</a>
+          <a href="#maison" data-i18n="footer.sustainability">Refills &amp; Eco-Glass</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Care">
+          <h4 data-i18n="footer.care">Customer Care</h4>
+          <a href="info.html#shipping" data-i18n="footer.shipping">Shipping &amp; Guarantee</a>
+          <a href="info.html#returns" data-i18n="footer.returns">Returns Policy</a>
+          <a href="#faq" data-i18n="footer.faq">FAQ &amp; Consultation</a>
+          <a href="info.html#ingredients">Ingredients &amp; contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Épure Botanique — Provence. All rights reserved.</p>
+        <div class="legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notice -->
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <!-- Shopping Bag Drawer -->
+  <div class="cart-backdrop" data-cart-backdrop hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" data-cart-drawer role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="cart-head">
+      <h2 id="cart-title" data-i18n="cart.title">Your Care Bag</h2>
+      <button class="icon-button" type="button" data-cart-close aria-label="Close shopping bag" data-i18n-aria="cart.close">×</button>
+    </div>
+    <div class="cart-items" data-cart-items aria-live="polite"></div>
+    <p class="cart-empty" data-cart-empty data-i18n="cart.empty">Your bag is empty. Explore our botanical treatments.</p>
+    <div class="cart-foot">
+      <div class="cart-total"><span data-i18n="cart.total">Total</span><strong data-cart-total>€0</strong></div>
+      <button class="btn btn--primary cart-checkout" type="button" data-cart-checkout disabled data-i18n="cart.checkout">Order via WhatsApp</button>
+      <div class="shipping-progress" data-shipping-progress aria-live="polite"></div>
+      <p class="cart-note" data-cart-note data-i18n="cart.note">We will finalize your order directly in WhatsApp.</p>
+    </div>
+  </aside>
+  <div class="modal-backdrop" data-product-backdrop hidden></div>
+  <section class="product-modal" data-product-modal role="dialog" aria-modal="true" aria-labelledby="product-modal-title" hidden>
+    <button class="icon-button modal-close" type="button" data-product-close aria-label="Close product details">×</button>
+    <div data-product-detail></div>
+  </section>
+  <div class="modal-backdrop" data-order-backdrop hidden></div>
+  <section class="order-modal" data-order-modal role="dialog" aria-modal="true" aria-labelledby="order-title" hidden>
+    <button class="icon-button modal-close" type="button" data-order-close aria-label="Close order form">×</button>
+    <h2 id="order-title">Complete your order</h2>
+    <p>Share your details so our care team can confirm availability and delivery in WhatsApp.</p>
+    <form data-order-form>
+      <label>Name<input name="name" autocomplete="name" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <label>Delivery city / country<input name="address" autocomplete="street-address" required></label>
+      <label>Note (optional)<textarea name="note" rows="3"></textarea></label>
+      <button class="btn btn--primary" type="submit">Continue to WhatsApp</button>
+      <p class="form-error" data-order-error role="alert"></p>
+    </form>
+  </section>
+
+  <!--__PRODUCT_DATA__-->
+  <script>
+    window.EPURE_PRODUCTS = window.EPURE_PRODUCTS || [
+      {id:"serum-botanique",name:"Élixir Botanique",category:"hair",family:"Hair Ritual · Scalp & Ends",notes:"Rosemary leaf, squalane, argan oil",price:46,currencySymbol:"€",liquid:"#967a38",size:"50 ml",rating:4.9,reviews:1840},
+      {id:"creme-celeste",name:"Crème Céleste",category:"skin",family:"Face Care · Barrier Recovery",notes:"Plant ceramides, blue chamomile, niacinamide",price:58,currencySymbol:"€",liquid:"#c2cbb5",size:"60 ml",rating:4.9,reviews:2150},
+      {id:"masque-nourrissant",name:"Masque Riche",category:"hair",family:"Hair Treatment · Deep Repair",notes:"Camellia seed, shea butter, hydrolyzed pea protein",price:52,currencySymbol:"€",liquid:"#cbb28d",size:"200 ml",rating:4.8,reviews:920},
+      {id:"huile-visage-or",name:"Huile d'Or Radieuse",category:"skin",family:"Face Oil · Radiance & Glow",notes:"Rosehip seed, prickly pear, neroli extract",price:64,currencySymbol:"€",liquid:"#d49b3d",size:"30 ml",rating:4.9,reviews:430},
+      {id:"baume-corps",name:"Baume Velouté",category:"body",family:"Body Care · Deep Hydration",notes:"Sweet almond oil, oat lipid, wild lavender",price:42,currencySymbol:"€",liquid:"#cfc5b0",size:"180 ml",rating:4.8,reviews:680},
+      {id:"brume-florale",name:"Brume Équilibrante",category:"skin",family:"Skin & Hair Mist · Antioxidant",notes:"Damask rose hydrosol, green tea, aloe vera",price:34,currencySymbol:"€",liquid:"#dfb6af",size:"100 ml",rating:4.7,reviews:510}
+    ];
+    window.EPURE_PRODUCTS.forEach(function(p){ p.concerns = p.concerns || ({ "serum-botanique":["dryness","breakage"], "creme-celeste":["dryness","sensitivity"], "masque-nourrissant":["dryness","breakage"], "huile-visage-or":["dryness","dullness"], "baume-corps":["dryness","sensitivity"], "brume-florale":["dullness","sensitivity"] }[p.id] || []); });
+  </script>
+  <script src="js/analytics.js?v=1" defer></script>
+  <script src="js/main.js?v=2" defer></script>
+</body>
+</html>

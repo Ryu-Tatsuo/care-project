@@ -1,0 +1,64 @@
+/* ==========================================================================
+   ÉPURE BOTANIQUE — Atelier de Soins
+   tokens.css — Design tokens
+   ========================================================================== */
+
+:root {
+  /* -- Botanical Palette --------------------------------------------------- */
+  --paper:        #f9f7f2;   /* warm organic linen background   */
+  --paper-raised: #ffffff;   /* clean card surface              */
+  --paper-dim:    #f0ece1;   /* soft muted sage / warm earth    */
+  --ink:          #1f241e;   /* deep forest / warm dark text    */
+  --ink-soft:     rgba(31, 36, 30, .75);
+  --ink-faint:    #5c665a;   /* passes AA for small text        */
+  --line:         rgba(31, 36, 30, .12);
+
+  --botanical:     #385438;   /* deep herb sage / forest         */
+  --botanical-light:#e5ede4;  /* soft herbal tint                */
+  --gold:         #b08642;   /* amber elixir gold accent        */
+  --gold-deep:    #825d27;   /* deep amber                      */
+  --gold-soft:    #f5e9d3;   /* warm amber glow                 */
+
+  --dark:         #161c16;   /* footer / CTA dark background    */
+  --dark-2:       #1e261e;
+  --cream:        #f3efe6;   /* text on dark                    */
+
+  /* -- Typography ---------------------------------------------------------- */
+  --font-display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --font-body:    "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --fs-hero:  clamp(2.9rem, 6.4vw, 5.4rem);
+  --fs-h2:    clamp(2.1rem, 4vw, 3.3rem);
+  --fs-h3:    clamp(1.35rem, 2.2vw, 1.8rem);
+  --fs-lead:  clamp(1.02rem, 1.4vw, 1.18rem);
+  --fs-body:  1rem;
+  --fs-small: .9rem;
+  --fs-label: .78rem;
+
+  /* -- Layout -------------------------------------------------------------- */
+  --container: 1180px;
+  --gutter:    clamp(1.25rem, 4vw, 2.5rem);
+  --section-pad: clamp(4.5rem, 10vw, 8.75rem);
+  --header-h: 74px;
+
+  /* -- Radii --------------------------------------------------------------- */
+  --r-sm: 10px;
+  --r-md: 18px;
+  --r-lg: 30px;
+  --r-pill: 999px;
+
+  /* -- Elevation ----------------------------------------------------------- */
+  --shadow-sm: 0 6px 18px -8px rgba(31, 36, 30, .18);
+  --shadow-md: 0 22px 48px -20px rgba(31, 36, 30, .28);
+
+  /* -- Motion -------------------------------------------------------------- */
+  --ease:   cubic-bezier(.22, .61, .36, 1);
+  --dur-1:  .25s;
+  --dur-2:  .45s;
+  --dur-3:  .8s;
+
+  /* -- Z-index ------------------------------------------------------------- */
+  --z-header: 50;
+  --z-drawer: 100;
+  --z-toast:  110;
+}
